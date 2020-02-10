@@ -1,22 +1,27 @@
-// Code from Create React App
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/**
+ * Copyright (c) Mik BRY
+ * mik@miklabs.com
+ *
+ * This source code is licensed under private license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-function App() {
+import React from 'react';
+import PropTypes from 'prop-types';
+import './App.css';
+import GLView from './GLView.jsx';
+
+function App({ scene }) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <GLView width={720} height={480} scene={scene} />
+      <div className="App-title">WebGL React App</div>
     </div>
   );
 }
+
+App.propTypes = {
+  scene: PropTypes.object.isRequired,
+};
 
 export default App;
