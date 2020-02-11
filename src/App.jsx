@@ -9,7 +9,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-import GLView from './GLView.jsx';
+import GLView from './GLView';
 
 function App({ scene }) {
   return (
@@ -21,6 +21,7 @@ function App({ scene }) {
 }
 
 App.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   scene: PropTypes.object.isRequired,
 };
 

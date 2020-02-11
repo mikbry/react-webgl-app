@@ -72,7 +72,7 @@ const plugins = babelConf => [
     filename: development ? 'styles.css' : 'static/assets/styles.css',
   }),
   babel(babelConf),
-  resolve(),
+  resolve({ extensions: ['.mjs', '.js', '.jsx', '.json'] }),
   string({
     include: ['**/*.fs', '**/*.vs'],
   }),
