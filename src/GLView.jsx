@@ -28,6 +28,7 @@ const GLView = ({ width, height, scene }) => {
 GLView.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
   scene: PropTypes.object.isRequired,
 };
 
