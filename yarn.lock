@@ -4099,10 +4099,10 @@ rollup-plugin-babel@^4.3.3:
     "@babel/helper-module-imports" "^7.0.0"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-commonjs-alternate@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs-alternate/-/rollup-plugin-commonjs-alternate-0.2.0.tgz#3809475c82cf34c6c84bcca61cd63c2342341bf4"
-  integrity sha512-RfTCWOcd3SmzIEu1xGlE4U9sZjdtIVbCQOkbdfZsiElxY1oP1kHGRRWBerVg5bpqXAp5ka1avrvNjOeHPC0JmQ==
+rollup-plugin-commonjs-alternate@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs-alternate/-/rollup-plugin-commonjs-alternate-0.4.0.tgz#b282db27e852e01bcbd98b248df97d0259262fb3"
+  integrity sha512-UCpNfWZmoTqAXiRnSQ9oIU/noce8ivNi5jnM3oBHNVLw+gopteCKXleSPJsRa78btWeZYieBYQ0Gqw7qmHctRw==
   dependencies:
     astring "^1.3.1"
     estree-walker "^0.6.0"

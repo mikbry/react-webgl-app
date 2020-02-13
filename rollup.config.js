@@ -93,7 +93,17 @@ const esm = {
   watch: watch(),
   plugins: plugins({
     exclude: 'node_modules/**',
-    presets: [['@babel/preset-env'], '@babel/preset-react'],
+    presets: [
+      [
+        '@babel/preset-env',
+        {
+          targets: {
+            esmodules: true,
+          },
+        },
+      ],
+      '@babel/preset-react',
+    ],
     plugins: development ? ['react-refresh/babel'] : [],
   }),
 };
